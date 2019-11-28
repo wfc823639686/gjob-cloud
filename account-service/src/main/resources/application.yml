@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    name: spring
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerOonnectionSize: 20
+    filters: stat, wall, log4j2
+  #spring jackson
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    deserialization:
+      #允许对象忽略json中不存在的属性
+      fail_on_unknown_properties: false
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+#开启驼峰命名法
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      update-strategy: not_empty
+
+#mybatis分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: false
+  params: count=countSql
