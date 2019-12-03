@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(name = "account-service", fallback = AccountServiceClientFallback.class)
 public interface AccountServiceClient {
 
-    @PostMapping(value = "/auth/getAccessToken")
+    @PostMapping(value = "/account/auth/getAccessToken")
     String getAccessToken(@RequestBody User user);
 }

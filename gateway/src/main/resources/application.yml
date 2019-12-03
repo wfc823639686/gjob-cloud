@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: account
+          uri: lb://account-service
+          predicates:
+            - Path=/account/**
+        - id: hunting
+          uri: lb://hunting-service
+          predicates:
+            - Path=/hunting/**
+
