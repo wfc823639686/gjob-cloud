@@ -19,4 +19,9 @@ public class UserController {
     public Object login(@RequestBody User user) {
        return accountServiceClient.getAccessToken(user);
     }
+
+    @PostMapping("register")
+    public Object register(@RequestBody User user) {
+        return accountServiceClient.save(user);
+    }
 }

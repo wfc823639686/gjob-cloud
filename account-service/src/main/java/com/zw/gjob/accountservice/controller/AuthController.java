@@ -14,4 +14,10 @@ public class AuthController {
     public Object getAccessToken(@RequestBody User user) {
         return "hahaha : " + user.getName();
     }
+
+    @PostMapping("save")
+    public Object save(@RequestBody User user) {
+        System.out.println(user.getName());
+        return true;
+    }
 }

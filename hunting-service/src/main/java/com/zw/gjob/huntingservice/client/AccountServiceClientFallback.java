@@ -10,4 +10,9 @@ public class AccountServiceClientFallback implements AccountServiceClient {
     public String getAccessToken(User user) {
         return "error for statAddUser";
     }
+
+    @Override
+    public boolean save(User user) {
+        return false;
+    }
 }

@@ -10,4 +10,7 @@ public interface AccountServiceClient {
 
     @PostMapping(value = "/account/auth/getAccessToken")
     String getAccessToken(@RequestBody User user);
+
+    @PostMapping(value = "/account/auth/save")
+    boolean save(@RequestBody User user);
 }
