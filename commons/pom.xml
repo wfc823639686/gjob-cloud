@@ -7,9 +7,9 @@
         <artifactId>gjob</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>commons-service</artifactId>
-    <name>commons-service</name>
-    <description>commons-service</description>
+    <artifactId>commons</artifactId>
+    <name>commons</name>
+    <description>commons</description>
 
 
     <dependencies>

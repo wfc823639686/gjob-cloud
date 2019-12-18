@@ -1,4 +1,4 @@
-package com.zw.gjob.commonsservice;
+package com.zw.gjob.commons;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

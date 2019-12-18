@@ -1,6 +1,6 @@
 package com.zw.gjob.huntingservice.controller;
 
-import com.zw.gjob.commonsservice.entity.User;
+import com.zw.gjob.commons.entity.User;
 import com.zw.gjob.huntingservice.client.AccountServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

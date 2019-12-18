@@ -1,6 +1,6 @@
 package com.zw.gjob.huntingservice.client;
 
-import com.zw.gjob.commonsservice.entity.User;
+import com.zw.gjob.commons.entity.User;
 import org.springframework.stereotype.Component;
 
 @Component

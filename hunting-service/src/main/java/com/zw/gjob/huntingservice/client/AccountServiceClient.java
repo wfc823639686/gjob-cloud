@@ -1,6 +1,6 @@
 package com.zw.gjob.huntingservice.client;
 
-import com.zw.gjob.commonsservice.entity.User;
+import com.zw.gjob.commons.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

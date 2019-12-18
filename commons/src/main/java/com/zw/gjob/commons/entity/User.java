@@ -1,4 +1,4 @@
-package com.zw.gjob.commonsservice.entity;
+package com.zw.gjob.commons.entity;
 
 import lombok.Data;
 
